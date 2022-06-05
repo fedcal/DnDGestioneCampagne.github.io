@@ -88,3 +88,6 @@ Per contribuire allo sviluppo del progetto, vi chiedo di compilare [questo modul
 
 Questa sezione è nata per segnalare problemi relativi all'uso del programma. Per segnalare i problemi compilare questo [modulo](https://docs.google.com/forms/d/1NNc8Xmttnq7Guz7qnRn84HfF6dNBL44CDAXmdv7lYzA/).
 Man mano che riceverò le vostre segnalazioni, completerò questa sezione con la risoluzione dei problemi.
+
+# Documentazione
+Per la documentazione del programma, che viene man mano aggiornata, rivolgersi a questo [link](https://fedcal.github.io/DnDGestioneCampagne.github.io/)
