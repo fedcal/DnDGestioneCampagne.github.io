@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.IncantesimiController">
+    <children>
+        <Label layoutX="284.0" layoutY="14.0" text="Incantesimi" />
+        <ListView fx:id="listView" layoutX="14.0" layoutY="50.0" prefHeight="326.0" prefWidth="225.0" />
+        <Button fx:id="infoOggetto" layoutX="292.0" layoutY="351.0" mnemonicParsing="false" onAction="#dettagliIncantesimo" text="Info Incantesimo" />
+      <TextArea fx:id="descrizioneIncantesimo" editable="false" layoutX="458.0" layoutY="50.0" prefHeight="326.0" prefWidth="310.0" promptText="Seleziona un incantestimo per visualizzare le informazioni" wrapText="true" />
+      <Label layoutX="249.0" layoutY="88.0" text="Livello" />
+      <ChoiceBox fx:id="filtroLivello" layoutX="296.0" layoutY="84.0" prefWidth="150.0" />
+      <Label layoutX="333.0" layoutY="50.0" text="Filtri" />
+      <Label layoutX="249.0" layoutY="134.0" text="Tipo" />
+      <Label layoutX="249.0" layoutY="180.0" text="Classe" />
+      <ChoiceBox fx:id="filtroClasse" layoutX="296.0" layoutY="176.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="filtroTipo" layoutX="296.0" layoutY="130.0" prefWidth="150.0" />
+      <Button fx:id="filtroIncantesimi" layoutX="291.0" layoutY="231.0" mnemonicParsing="false" onAction="#filtraIncantesimi" text="Filtra incantesimi" />
+      <Button fx:id="eliminaFiltri" layoutX="291.0" layoutY="266.0" mnemonicParsing="false" onAction="#deleteFiltri" prefHeight="25.0" prefWidth="104.0" text="Elimina filtri" />
+    </children>
+</Pane>

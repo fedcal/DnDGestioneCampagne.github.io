@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.HomeController">
+    <children>
+        <Button fx:id="dadi" layoutX="144.0" layoutY="125.0" mnemonicParsing="false" onAction="#dadiView" prefHeight="25.0" prefWidth="102.0" text="Dadi" />
+        <Button fx:id="combattimenti" layoutX="23.0" layoutY="125.0" mnemonicParsing="false" onAction="#combattimentiView" prefHeight="25.0" prefWidth="102.0" text="Combattimenti" />
+        <Label layoutX="178.0" layoutY="14.0" text="Gestione Campagne D&amp;D">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="218.0" layoutY="41.0" text="Progetto Worlds'Inn">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Hyperlink fx:id="gruppoChat" layoutX="469.0" layoutY="120.0" onAction="#linkGruppoChat" prefHeight="30.0" prefWidth="111.0" style="-fx-border-radius: 5px; -fx-border-color: black; -fx-alignment: center;" text="Gruppo Chat" textAlignment="JUSTIFY" textFill="#181717">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </Hyperlink>
+        <Hyperlink fx:id="sitoSviluppatore" layoutX="469.0" layoutY="161.0" onAction="#linkFederico" prefHeight="30.0" prefWidth="111.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-alignment: center;" text="Worlds'Inn" textFill="#042302">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </Hyperlink>
+        <Hyperlink fx:id="gruppoChat2" layoutX="469.0" layoutY="200.0" onAction="#linkProposte" prefHeight="30.0" prefWidth="111.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-alignment: center;" text="Proposte" textFill="#032602">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </Hyperlink>
+        <Button fx:id="listaGiocatori" layoutX="307.0" layoutY="123.0" mnemonicParsing="false" onAction="#listaGiocatoriview" prefHeight="25.0" prefWidth="102.0" text="Lista giocatori" />
+        <Button fx:id="creaScheda" layoutX="23.0" layoutY="164.0" mnemonicParsing="false" onAction="#creazioneSchedaView" prefHeight="25.0" prefWidth="102.0" text="Crea scheda" />
+        <Label fx:id="errorLabel" layoutX="15.0" layoutY="356.0" style="-fx-font-weight: 700;" textFill="RED">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+      <Hyperlink fx:id="gruppoChat31" layoutX="469.0" layoutY="240.0" onAction="#linkDocumentazione" prefHeight="30.0" prefWidth="111.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-alignment: center;" text="Federico Calò" textFill="#032801">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Hyperlink>
+      <Button fx:id="materiale" layoutX="144.0" layoutY="164.0" mnemonicParsing="false" onAction="#materialeView" prefHeight="25.0" prefWidth="102.0" text="Materiale" />
+    </children>
+</Pane>

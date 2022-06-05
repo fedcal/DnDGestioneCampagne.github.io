@@ -1,0 +1,40 @@
+http://mongodb.github.io/mongo-java-driver/2.13/getting-started/installation-guide/
+
+git config --local core.autocrlf false
+
+ESEGUIRE IL COMANDO NELLA CARTELLA TARGET
+
+jpackage --type exe --input . --dest . --main-jar .\DndGestionale.jar --main-class Launcher --win-short
+cut --win-menu
+
+jpackage --type msi --app-version "1.0" --name "DndGestionale"  --input . --dest . --main-jar .\DndGestionale.jar --main-
+class Launcher --win-shortcut --win-menu
+
+jpackage --type exe --app-version "1.1" --name "DndGestionale" --icon ./icon.ico  --input . --dest . --main-jar .\DndGestionale2.jar --main-class Launcher --win-shortcut --win-menu -p bson-3.12.10.jar -p mongodb-driver-3.12.10.jar -p mongodb-driver-core-3.12.10.jar
+
+jpackage --type exe --app-version "1.1" --name "DndGestionale" --icon ./icon.ico  --input . --dest . --main-jar .\DndGestionale2-1.0-SNAPSHOT-jar-with-dependencies.jar --main-class Launcher --win-shortcut --win-menu
+
+AGGIORNAMENTI
+
+Per inviare aggiornamenti all'applciativo, bisogna utilizzare FXLauncher
+
+https://github.com/edvin/fxlauncher?fbclid=IwAR3Pp_V2Nngi21UJ0I3LoEbKvtILvwRmhpfY6wu5lmFXuMhZPPghCqcLbKY
+
+https://javarepos.com/lib/edvin-fxlauncher-java-gui?fbclid=IwAR3ssv9skfbhsOMdMCI2BYnRsaaGIde0Yv8IDhG9HC24FvCBgCmv13U06SI
+
+Oppure GetDown: https://github.com/threerings/getdown
+oppure UpdateFX: https://github.com/vinumeris/updatefx
+
+GENERARE DOCUMENTAZIONE
+
+mvn javadoc:javadoc
+
+Frontend
+https://primefaces.github.io/primefaces/11_0_0/#/gettingstarted/download
+
+https://www.youtube.com/watch?v=hAAAQL03f9E&list=PLy4OcwImJzBKzWWb9K_WB3QzaxoiGmxyo&index=
+
+
+JENKINS
+
+java -jar .\jenkins.war  --enable-future-java

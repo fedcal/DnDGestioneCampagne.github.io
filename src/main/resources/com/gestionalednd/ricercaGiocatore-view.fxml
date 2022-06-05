@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.ListaGiocatori">
+    <children>
+        <Button fx:id="ricercaBtn" layoutX="119.0" layoutY="256.0" mnemonicParsing="false" onAction="#ricercaGiocatoreDb" text="Ricerca" />
+        <ListView fx:id="vistaGiocatoriRicerca" layoutX="288.0" layoutY="50.0" prefHeight="321.0" prefWidth="267.0" />
+        <Label layoutX="23.0" layoutY="102.0" text="Città" />
+        <Label layoutX="23.0" layoutY="135.0" text="Provincia" />
+        <ChoiceBox fx:id="gdrGiocatoriRicerca" layoutX="98.0" layoutY="167.0" prefWidth="150.0" value="Seleziona gdr" />
+        <ChoiceBox fx:id="edizioneGiocatoriRicerca" layoutX="98.0" layoutY="200.0" prefWidth="150.0" value="Seleziona edizione" />
+        <ChoiceBox fx:id="provinciaGiocatoriRicerca" layoutX="98.0" layoutY="131.0" prefWidth="150.0" value="Seleziona provincia" />
+        <ChoiceBox fx:id="cittaGiocatoriRicarca" layoutX="98.0" layoutY="98.0" prefWidth="150.0" value="Seleziona città" />
+        <Label layoutX="23.0" layoutY="171.0" text="Gdr" />
+        <Label layoutX="23.0" layoutY="204.0" text="Edizione" />
+        <Button fx:id="aggiungiGiocatoreBtn" layoutX="87.0" layoutY="301.0" mnemonicParsing="false" onAction="#aggiungiGiocatoreView" text="Aggiungi giocatore" />
+        <Label layoutX="175.0" layoutY="14.0" text="Gestionale D&amp;D - Sezione ricerca giocatori" />
+    </children>
+</Pane>
