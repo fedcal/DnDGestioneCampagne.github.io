@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.gestionalednd","l":"com.gestionalednd"},{"m":"com.gestionalednd","l":"com.utilities"},{"m":"com.gestionalednd","l":"com.utilities.dizionari"},{"m":"com.gestionalednd","l":"com.utilities.scheda"}];updateSearchResults();
