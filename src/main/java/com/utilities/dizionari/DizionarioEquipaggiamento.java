@@ -2,9 +2,18 @@ package com.utilities.dizionari;
 
 import java.util.TreeSet;
 
+/**
+ * Dizionario contenente le informazioni relative all'equipaggiamento
+ */
 public class DizionarioEquipaggiamento {
+    /**
+     * TreeSet rappresentante il dizionario relativo all'equipaggiamento
+     */
     private TreeSet<Equipaggiamento> dizionarioEquipaggiamento= new TreeSet<>();
 
+    /**
+     * Costruttore di classe che popola il dizionario
+     */
     public DizionarioEquipaggiamento(){
         this.dizionarioEquipaggiamento.add(new Equipaggiamento("Abaco","Strumento solitamente in legno, costituito da una cornice rettangolare che contiene delle aste sulle quali scorrono delle palline",1F,"2 mo"));
         this.dizionarioEquipaggiamento.add(new Equipaggiamento("Abito Comune","Abito comune per vestirsi",1.5F,"5 ma"));
@@ -109,6 +118,10 @@ public class DizionarioEquipaggiamento {
         //String nomeEquipaggiamento, String descrizione, float peso, String costo
     }
 
+    /**
+     * Restituisce il dizionario
+     * @return  TreeSet {@literal <Equipaggiamento>}
+     */
     public TreeSet<Equipaggiamento> getDizionarioEquipaggiamento() {
         return dizionarioEquipaggiamento;
     }

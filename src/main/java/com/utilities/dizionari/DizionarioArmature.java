@@ -7,8 +7,14 @@ import java.util.TreeSet;
  * Classe rappresentante le armature disponibili
  */
 public class DizionarioArmature {
+    /**
+     * TreeSet rappresentante il dizionario contenente le armature
+     */
     private Set<Armature> dizionarioArmature=new TreeSet<>();
 
+    /**
+     * Costruttore di classe che serve a popolare il dizionario
+     */
     public DizionarioArmature(){
         this.dizionarioArmature.add(new Armature("Imbottita","Armatura leggera","5 mo","11 + modificatore di Des","--","Svantaggio",4F));
         this.dizionarioArmature.add(new Armature("Cuoio","Armatura leggera","10 mo","11 + modificatore di Des","--","--",5F));

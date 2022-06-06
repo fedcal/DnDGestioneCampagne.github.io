@@ -2,6 +2,7 @@ package com.gestionalednd;
 
 import com.utilities.dizionari.Armature;
 import com.utilities.dizionari.DizionarioArmature;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -12,11 +13,31 @@ import java.util.Iterator;
 import java.util.ResourceBundle;
 import java.util.Set;
 
+/**
+ * Controller riferito alla visualizzazione del materiale homebrew per le armature
+ */
 public class ArmatureController implements Initializable {
-    public ListView listView;
-    public Label descrizioneArma;
-    public Button infoArmatura;
+    /**
+     * fx:id relativo alla listView per la visualizzazione delle armature
+     */
+    @FXML
+    private ListView listView;
 
+    /**
+     * fx:id relativo al Label per contenere la descrizione dell'armatura selezionata
+     */
+    @FXML
+    private Label descrizioneArma;
+
+    /**
+     * fx:id relativo al Button che l'utente preme per ottenere le informazioni dell'armatura
+     */
+    @FXML
+    private Button infoArmatura;
+
+    /**
+     * Costruttore di classe
+     */
     public void dettagliArmatura( ) {
         String topics;
         topics=listView.getSelectionModel().getSelectedItem().toString();
@@ -32,6 +53,11 @@ public class ArmatureController implements Initializable {
         }
     }
 
+    /**
+     * Inizializzatore dei campi della classe
+     * @param url Url del file xml
+     * @param resourceBundle Bundle delle risorse
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         DizionarioArmature dizionarioArmi=new DizionarioArmature();

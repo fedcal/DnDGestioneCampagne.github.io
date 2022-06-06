@@ -175,7 +175,7 @@ public class Arma implements Comparable<Arma>{
 
     /**
      * Metodo per impostare le proprietà dell'arma
-     * @param proprieta
+     * @param proprieta Caratteristiche particolari che contraddistinguono l'arma
      */
     public void setProprieta(String proprieta) {
         this.proprieta = proprieta;

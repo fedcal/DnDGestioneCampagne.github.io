@@ -3,9 +3,18 @@ package com.utilities.dizionari;
 import java.util.Set;
 import java.util.TreeSet;
 
+/**
+ * Classe rappresentante il dizionario degli incantesimi
+ */
 public class DizionarioIncantesimi {
+    /**
+     * Attributo di classe rappresentante il dizionario attraverso un Set di oggetti di tipo Incantesimo
+     */
     private Set<Incantesimo> dizionarioIncantesimi;
 
+    /**
+     * Costruttore di classe volto al popolamento del dizionario
+     */
     public DizionarioIncantesimi(){
         this.dizionarioIncantesimi=new TreeSet<>();
 
@@ -38,6 +47,10 @@ public class DizionarioIncantesimi {
 
     }
 
+    /**
+     * Metodo volto a ottenere il dizionario
+     * @return Set {@literal <Incantesimo>}
+     */
     public Set<Incantesimo> getDizionarioIncantesimi() {
         return this.dizionarioIncantesimi;
     }

@@ -2,6 +2,7 @@ package com.gestionalednd;
 
 import com.utilities.dizionari.Arma;
 import com.utilities.dizionari.DizionarioArmi;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -12,11 +13,33 @@ import java.util.Iterator;
 import java.util.ResourceBundle;
 import java.util.Set;
 
+/**
+ * Classe controller per la gestione della visuale armi contenete informazioni homebrew
+ */
 public class ArmiHomebrewController implements Initializable {
-    public ListView listView;
-    public Label descrizioneArma;
-    public Button infoArma;
+    /**
+     * fx:id che si riferisce al ListView contente tutte le armi
+     */
+    @FXML
+    private ListView listView;
 
+    /**
+     * fx:id che si riferisce al Label contenete la descrizione delle armi
+     */
+    @FXML
+    private Label descrizioneArma;
+
+    /**
+     * fx:id che si riferisce al Button che l'utente preme per ottenere le informazioni relative all'arma
+     */
+    @FXML
+    private Button infoArma;
+
+    /**
+     * Inizializzatore degli attributi di classi
+     * @param url Url del file xml
+     * @param resourceBundle Bundle delle risorse
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         DizionarioArmi dizionarioArmi=new DizionarioArmi();
@@ -28,6 +51,9 @@ public class ArmiHomebrewController implements Initializable {
 
     }
 
+    /**
+     * Costruttore di classe
+     */
     public void dettagliArma( ) {
         String topics;
         topics=listView.getSelectionModel().getSelectedItem().toString();

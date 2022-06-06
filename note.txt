@@ -38,3 +38,7 @@ https://www.youtube.com/watch?v=hAAAQL03f9E&list=PLy4OcwImJzBKzWWb9K_WB3QzaxoiGm
 JENKINS
 
 java -jar .\jenkins.war  --enable-future-java
+
+Documentazione push
+
+ git subtree push --prefix documentation/apidocs origin gh-pages

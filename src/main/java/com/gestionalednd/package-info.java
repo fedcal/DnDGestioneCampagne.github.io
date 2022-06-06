@@ -1,4 +1,4 @@
 /**
- * pckage contentenete le classi controller e main
+ * Package contente le classi relative al core business dell'applicativo
  */
 package com.gestionalednd;

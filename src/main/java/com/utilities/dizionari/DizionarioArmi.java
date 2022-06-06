@@ -78,6 +78,12 @@ public class DizionarioArmi {
     public void setDizionarioArmi(Set<Arma> dizionarioArmi) {
         this.dizionarioArmi = dizionarioArmi;
     }
+
+    /**
+     * Metodo per aggiungere un arma
+     * @param e Arma da aggiungere
+     * @return true
+     */
     public boolean addArma(Arma e){
         dizionarioArmi.add(e);
         return true;

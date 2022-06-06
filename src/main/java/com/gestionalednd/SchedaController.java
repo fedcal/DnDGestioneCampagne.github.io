@@ -13,13 +13,19 @@ import java.util.LinkedList;
  * Controller per la gestione della scheda del pg/png/mostro
  */
 public class SchedaController {
-
+    /**
+     * fx:id del TextField rappresentante il nome dell'arma
+     */
     @FXML
     private TextField nomeArma;
-
+    /**
+     * fx:id del TextField rappresentante il nome dell'incantesimo
+     */
     @FXML
     private TextField nomeIncantesimo;
-
+    /**
+     * fx:id del TextField rappresentante il nome dell'equipaggiamento
+     */
     @FXML
     private TextField nomeEquipaggiamento;
     /**
