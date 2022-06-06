@@ -4,7 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.HomebrewController">
+<Pane stylesheets="@stylesheets/general.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.HomebrewController">
    <children>
       <Label layoutX="112.0" layoutY="22.0" text="Materiale - D&amp;D Gestionale" />
       <Button fx:id="armiButton" layoutX="76.0" layoutY="86.0" mnemonicParsing="false" onAction="#armiView" prefHeight="25.0" prefWidth="88.0" text="Armi" />

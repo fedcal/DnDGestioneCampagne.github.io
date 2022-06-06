@@ -6,7 +6,7 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.ListaGiocatori">
+<Pane stylesheets="@stylesheets/general.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.ListaGiocatori">
     <children>
         <Button fx:id="ricercaBtn" layoutX="119.0" layoutY="256.0" mnemonicParsing="false" onAction="#ricercaGiocatoreDb" text="Ricerca" />
         <ListView fx:id="vistaGiocatoriRicerca" layoutX="288.0" layoutY="50.0" prefHeight="321.0" prefWidth="267.0" />

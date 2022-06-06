@@ -1,3 +1,6 @@
+/**
+ * Modulo info dipendenze programma
+ */
 module com.gestionalednd {
     requires javafx.controls;
     requires javafx.fxml;

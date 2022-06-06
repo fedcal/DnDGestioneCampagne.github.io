@@ -198,6 +198,10 @@ public class HomeController {
         stage.show();
     }
 
+    /**
+     * Metodo per visualizzare la vista del materiale homebrew
+     * @throws IOException Genera un IOException se il metodo non riesce a trovare il file fxml
+     */
     public void materialeView() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("homebrew-view.fxml"));
         Parent root = (Parent) fxmlLoader.load();

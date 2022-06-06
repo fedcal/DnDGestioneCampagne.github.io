@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.HomeController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@stylesheets/general.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.HomeController">
     <children>
         <Button fx:id="dadi" layoutX="144.0" layoutY="125.0" mnemonicParsing="false" onAction="#dadiView" prefHeight="25.0" prefWidth="102.0" text="Dadi" />
         <Button fx:id="combattimenti" layoutX="23.0" layoutY="125.0" mnemonicParsing="false" onAction="#combattimentiView" prefHeight="25.0" prefWidth="102.0" text="Combattimenti" />

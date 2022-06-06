@@ -208,38 +208,74 @@ public class SchedaPG implements Serializable {
         return razzaPersonaggio;
     }
 
+    /**
+     * Metodo per impostare la razza del personaggio
+     * @param razzaPersonaggio String - Razza del personaggio
+     */
     public void setRazzaPersonaggio(String razzaPersonaggio) {
         this.razzaPersonaggio = razzaPersonaggio;
     }
 
+    /**
+     * Metodo per ottenere il livello del personaggio
+     * @return Int - Livello del personaggio
+     */
     public int getLivelloPersonaggio() {
         return livelloPersonaggio;
     }
 
+    /**
+     * Metodo per impostare il livello del personaggio
+     * @param livelloPersonaggio Int - livello personaggio
+     */
     public void setLivelloPersonaggio(int livelloPersonaggio) {
         this.livelloPersonaggio = livelloPersonaggio;
     }
 
+    /**
+     * Metodo per ottenere punti esperienza
+     * @return Int - Punti esperienza
+     */
     public int getPuntiEsperienza() {
         return puntiEsperienza;
     }
 
+    /**
+     * Impostare i punti esperienza del personaggio
+     * @param puntiEsperienza Int - punti esperienza
+     */
     public void setPuntiEsperienza(int puntiEsperienza) {
         this.puntiEsperienza = puntiEsperienza;
     }
 
+    /**
+     * Ottenere l'allineamento del personaggio
+     * @return String - Allineamento
+     */
     public String getAllineamentoPersonaggio() {
         return allineamentoPersonaggio;
     }
 
+    /**
+     * Impostare l'allineamento del personaggio
+     * @param allineamentoPersonaggio String - Allineamento
+     */
     public void setAllineamentoPersonaggio(String allineamentoPersonaggio) {
         this.allineamentoPersonaggio = allineamentoPersonaggio;
     }
 
+    /**
+     * Metodo per ottenere i tiri salvezza
+     * @return  Map {@literal <String,CheckMod>} contenente i tiri salvezza
+     */
     public Map<String, CheckMod> getTiriSalvezza() {
         return tiriSalvezza;
     }
 
+    /**
+     * Metodo per impostare i Tiri Salvezza
+     * @param tiriSalvezza Map {@literal <String,CheckMod>} - Map contenete i tiri salvezza
+     */
     public void setTiriSalvezza(Map<String, CheckMod> tiriSalvezza) {
         this.tiriSalvezza = tiriSalvezza;
     }
@@ -374,7 +410,7 @@ public class SchedaPG implements Serializable {
 
     /**
      * Metodo per ottenere la saggezza passiva
-     * @return
+     * @return Int - Punteggio saggezza Passiva
      */
     public int getSaggezzaPassiva() {
         return saggezzaPassiva;
@@ -382,7 +418,7 @@ public class SchedaPG implements Serializable {
 
     /**
      * Metodo per impostare la saggezza passiva
-     * @param saggezzaPassiva
+     * @param saggezzaPassiva int - Valore Saggezza Passiva
      */
     public void setSaggezzaPassiva(int saggezzaPassiva) {
         this.saggezzaPassiva = saggezzaPassiva;
@@ -390,7 +426,7 @@ public class SchedaPG implements Serializable {
 
     /**
      * Metodo per ottenere la classe armatura
-     * @return
+     * @return int - Punteggio Classe Armatura
      */
     public int getClasseArmatura() {
         return classeArmatura;
@@ -398,7 +434,7 @@ public class SchedaPG implements Serializable {
 
     /**
      * Metodo per impostare la classe armatura
-     * @param classeArmatura
+     * @param classeArmatura int - Punteggio classe armatura
      */
     public void setClasseArmatura(int classeArmatura) {
         this.classeArmatura = classeArmatura;
@@ -406,7 +442,7 @@ public class SchedaPG implements Serializable {
 
     /**
      * Metodo per ottenere l'iniziativa
-     * @return
+     * @return int - punteggio Iniziativa
      */
     public int getIniziativa() {
         return iniziativa;

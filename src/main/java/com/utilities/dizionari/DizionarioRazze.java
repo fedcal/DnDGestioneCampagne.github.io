@@ -2,9 +2,18 @@ package com.utilities.dizionari;
 
 import java.util.TreeSet;
 
+/**
+ * Classe dizionario per le razze
+ */
 public class DizionarioRazze {
+    /**
+     * TreeSet di oggetti di tipo Razza per la rappresentazione del dizionario
+     */
     TreeSet<Razza> dizionarioRazze=new TreeSet<>();
 
+    /**
+     * Costruttore di classe per il popolamento del dizionario
+     */
     public DizionarioRazze(){
         this.dizionarioRazze.add(new Razza("Elfo","Destrezza +2", "Vivono fino ai 750 anni e ricevono il loro nome da adulto a 100 anni","Gli elfi amano la libertà, la varietà e l'espressione individuale, cosa che li avvicina agli aspetti più positivi del caos. Apprezzano e proteggono la libertà degli altri quanto la propria, e per buona parte tendono al bene piuttosto che al male. I drow costituiscono un'eccezione: il loro esilio nell'Underdark li ha resi malevoli e pericolosi. I drow tendono per la maggior parte al male piuttosto che al bene.","Un elfo ha un'altezza che va da poco meno di 1,5 a poco più 1,8 metri e una struttura snella. È una creatura di taglia Media.",9F,"Gli elfi sanno parlare, leggere e scrivere in Comune e in Elfico. L'Elfico è una lingua fluida, dalle tonalità sottili e dalla grammatica complessa. La letteratura elfica è ricca e variegata: i loro canti e i loro poemi sono celebri anche presso le altre razze. Molti bardi imparano la lingua degli elfi per poter aggiungere le ballate elfiche al proprio repertorio.","Manuale del giocatore","Scurovlsione. Un elfo, abituato a muoversi nella penombra del sottobosco e alla luce della luna, beneficia di una vista superiore nell'oscurità e nelle condizioni di luce fioca. Un elfo in condizioni di luce fioca può vedere fino a 18 metri come se si trovasse in condizioni di luce intensa e nell'oscurità come se si trovasse in luce fioca. Nell'oscurità non è in grado di discernere i colori, ma solo le tonalità di grigio. Sensi Acuti. Un elfo ha competenza nell'abilità Percezione. RetaAAlo Fatato. Un elfo dispone di vantaggio ai tiri salvezza per non essere affascinato e non può essere addormentato tramite la magia. Trance. Gli elfi non hanno bisogno di dormire. Anziché dormire entrano per 4 ore al giorno in una profonda meditazione e in uno stato semicosciente. (Il termine in Comune per tale meditazione è \"trance\".) Durante questa meditazione, l'elfo entra in una sorta di stato sognante, che in realtà non è altro che una serie di esercizi mentali che anni di pratica hanno reso automatici. Dopo tale periodo, l'elfo ottiene gli stessi benefici di 8 ore di sonno per un umano."," Antiche divisioni in seno al popolo elfico hanno prodotto tre grandi sottorazze: gli elfi alti, gli elfi dei boschi e gli elfi oscuri, comunemente chiamati drow. Il giocatore deve scegliere una di queste sottorazze per il proprio personaggio. In alcuni mondi, questi gruppi sono ulteriormente suddivisi (come gli elfi del sole e gli elfi della luna in Forgotten Realms), quindi, se il giocatore desidera, pub scegliere uno di quei gruppi più ristretti. "));
         this.dizionarioRazze.add(new Razza("Halfling","Destrezza +2"," Un halfling raggiunge la maturità a 20 anni e normalmente vive circa fino alla metà del suo secondo secolo","Quasi tutti gli halfling sono legali buoni. Di norma sono creature gentili e di buon cuore, detestano vedere soffrire le altre creature e non sopportano la prepotenza. Sono anche molto ordinati e tradizionalisti e si affidano per ogni necessità alla loro comunità di appartenenza e alle certezze delle antiche tradizioni","Un halfting è alto circa 90 cm e pesa circa 20 kg. È una creatura di taglia Piccola.",7.5F,"Un halfting sa parlare, leggere e scrivere in Comune e in Halfting. La lingua Halfling non è segreta, ma gli hatfting non la condividono volentieri con i membri delle altre razze. Scrivono poco, quindi la letteratura halHing non è molto ricca. Le loro tradizioni orali, invece, sono molto ricche e diffuse. Quasi tutti gli halfling usano il Comune per comunicare con gli abitanti delle regioni in cui vivono o che attraversano nei loro viaggi. ","Manuale del giocatore","Fortunato. Quando ottiene 1 a un tiro per colpire, a una prova di caratteristica o a un tiro salvezza, un halfling può ripetere il tiro del dado e deve usare ti nuovo risultato. Corggioso. Un halfling dispone di vantaggio ai tiri salvezza per non essere spaventato. Agilità Halfling. Un halfling può muoversi attraverso gli spazi di qualsiasi creatura più grande","I due principali tipi di halfting, piedelesto e tozzo, sono più simili a due famiglie strettamente imparentate che a delle sottorazze vere e proprie. Il giocatore dovrà scegliere tra una di queste due sottorazte. "));
@@ -16,4 +25,11 @@ public class DizionarioRazze {
         //String nomeRazza, String incrementoPunteggi, String eta, String allineamento, String taglia, int velocita, String linguaggi, String manualeAppartenza, String altro, String sottoRazze
     }
 
+    /**
+     * Metodo per ottenere il dizionario delle razze
+     * @return TreeSet {@literal Razza} - Dizionario delle razze
+     */
+    public TreeSet<Razza> getDizionarioRazze() {
+        return dizionarioRazze;
+    }
 }
