@@ -6,24 +6,24 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane stylesheets="@stylesheets/general.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.CombattimentoController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@stylesheets/general.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.CombattimentoController">
     <children>
         <Label layoutX="164.0" layoutY="14.0" text="Gestione campagne D&amp;D - Sezione combattimento" />
-        <ListView fx:id="listaIniziativa" layoutX="374.0" layoutY="51.0" prefHeight="319.0" prefWidth="200.0" />
-        <Button fx:id="prossimoTurno" layoutX="263.0" layoutY="345.0" mnemonicParsing="false" onAction="#nextTurn" text="Prossimo turno" />
-        <Button fx:id="inserisciPersonaggio" layoutX="103.0" layoutY="188.0" mnemonicParsing="false" onAction="#addPersonaggio" text="Inserisci" />
-        <Button fx:id="modificaVita" layoutX="88.0" layoutY="320.0" mnemonicParsing="false" onAction="#changeVita" text=" Modifica vita" />
+        <ListView fx:id="listaIniziativa" focusTraversable="false" layoutX="374.0" layoutY="51.0" prefHeight="319.0" prefWidth="200.0" />
+        <Button fx:id="prossimoTurno" focusTraversable="false" layoutX="263.0" layoutY="345.0" mnemonicParsing="false" onAction="#nextTurn" text="Prossimo turno" />
+        <Button fx:id="inserisciPersonaggio" focusTraversable="false" layoutX="103.0" layoutY="188.0" mnemonicParsing="false" onAction="#addPersonaggio" text="Inserisci" />
+        <Button fx:id="modificaVita" focusTraversable="false" layoutX="88.0" layoutY="320.0" mnemonicParsing="false" onAction="#changeVita" text=" Modifica vita" />
         <Label layoutX="14.0" layoutY="59.0" text="Nome Pg/Png/Mostro" />
         <Label layoutX="14.0" layoutY="99.0" text="Vita" />
         <Label layoutX="11.0" layoutY="146.0" text="Iniziativa" />
-        <TextField fx:id="nomePersonaggio" layoutX="159.0" layoutY="55.0" promptText="Nome" />
-        <TextField fx:id="vitaPersonaggio" layoutX="159.0" layoutY="95.0" text="0" />
-        <TextField fx:id="iniziativaPersonaggio" layoutX="159.0" layoutY="142.0" text="0" />
+        <TextField fx:id="nomePersonaggio" focusTraversable="false" layoutX="159.0" layoutY="55.0" promptText="Nome" />
+        <TextField fx:id="vitaPersonaggio" focusTraversable="false" layoutX="159.0" layoutY="95.0" text="0" />
+        <TextField fx:id="iniziativaPersonaggio" focusTraversable="false" layoutX="159.0" layoutY="142.0" text="0" />
         <Label layoutX="14.0" layoutY="239.0" text="Nome Pg/Png/Mostro" />
-        <TextField fx:id="modificaNome" layoutX="159.0" layoutY="235.0" promptText="Nome" />
+        <TextField fx:id="modificaNome" focusTraversable="false" layoutX="159.0" layoutY="235.0" promptText="Nome" />
         <Label layoutX="40.0" layoutY="282.0" text="+" />
-        <TextField fx:id="aggiungiVita" layoutX="59.0" layoutY="278.0" prefHeight="25.0" prefWidth="58.0" text="0" />
+        <TextField fx:id="aggiungiVita" focusTraversable="false" layoutX="59.0" layoutY="278.0" prefHeight="25.0" prefWidth="58.0" text="0" />
         <Label layoutX="173.0" layoutY="282.0" text="-" />
-        <TextField fx:id="togliVita" layoutX="187.0" layoutY="278.0" prefHeight="25.0" prefWidth="58.0" text="0" />
+        <TextField fx:id="togliVita" focusTraversable="false" layoutX="187.0" layoutY="278.0" prefHeight="25.0" prefWidth="58.0" text="0" />
     </children>
 </Pane>

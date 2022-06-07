@@ -7,34 +7,34 @@
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane stylesheets="@stylesheets/general.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.InserimentoGiocatore">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="600.0" stylesheets="@stylesheets/general.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.InserimentoGiocatore">
     <children>
-        <Button fx:id="inserireUtente" layoutX="223.0" layoutY="261.0" mnemonicParsing="false" onAction="#inserimentoUtenteDatabase" text="Inserisci Utente" />
+        <Button fx:id="inserireUtente" focusTraversable="false" layoutX="223.0" layoutY="261.0" mnemonicParsing="false" onAction="#inserimentoUtenteDatabase" text="Inserisci Utente" />
         <Label layoutX="34.0" layoutY="92.0" text="Nome" />
-        <TextField fx:id="nomeUtente" layoutX="107.0" layoutY="88.0" text="Inserisci" />
+        <TextField fx:id="nomeUtente" focusTraversable="false" layoutX="107.0" layoutY="88.0" text="Inserisci" />
         <Label layoutX="28.0" layoutY="123.0" prefHeight="47.0" prefWidth="69.0" text="Usurname Telegram" textAlignment="CENTER" wrapText="true" />
-        <TextField fx:id="usurnameUtente" layoutX="107.0" layoutY="129.0" text="Inserisci" />
+        <TextField fx:id="usurnameUtente" focusTraversable="false" layoutX="107.0" layoutY="129.0" text="Inserisci" />
         <Label layoutX="34.0" layoutY="183.0" text="Città" />
         <Label layoutX="34.0" layoutY="215.0" text="Provincia" />
-        <Label layoutX="297.0" layoutY="133.0" text="Edizione" />
-        <Label layoutX="296.0" layoutY="92.0" text="GDR" />
-        <TextField fx:id="cittaUtente" layoutX="107.0" layoutY="171.0" text="Inserisci" />
-        <TextField fx:id="provinciaUtente" layoutX="107.0" layoutY="211.0" text="Inserisci" />
-        <TextField fx:id="gdrUtente" layoutX="360.0" layoutY="88.0" text="Inserisci" />
-        <TextField fx:id="edizioneUtente" layoutX="360.0" layoutY="129.0" text="Inserisci" />
-        <RadioButton fx:id="onlineSessione" layoutX="320.0" layoutY="192.0" mnemonicParsing="false" selected="true" text="Online">
+        <Label focusTraversable="false" layoutX="297.0" layoutY="133.0" text="Edizione" />
+        <Label focusTraversable="false" layoutX="296.0" layoutY="92.0" text="GDR" />
+        <TextField fx:id="cittaUtente" focusTraversable="false" layoutX="107.0" layoutY="171.0" text="Inserisci" />
+        <TextField fx:id="provinciaUtente" focusTraversable="false" layoutX="107.0" layoutY="211.0" text="Inserisci" />
+        <TextField fx:id="gdrUtente" focusTraversable="false" layoutX="360.0" layoutY="88.0" text="Inserisci" />
+        <TextField fx:id="edizioneUtente" focusTraversable="false" layoutX="360.0" layoutY="129.0" text="Inserisci" />
+        <RadioButton fx:id="onlineSessione" focusTraversable="false" layoutX="320.0" layoutY="192.0" mnemonicParsing="false" selected="true" text="Online">
             <toggleGroup>
                 <ToggleGroup fx:id="onlineFisico" />
             </toggleGroup>
         </RadioButton>
-        <RadioButton fx:id="fisicoSessione" layoutX="320.0" layoutY="219.0" mnemonicParsing="false" text="Fisico" toggleGroup="$onlineFisico" />
-        <RadioButton fx:id="masterSessione" layoutX="457.0" layoutY="175.0" mnemonicParsing="false" text="Master">
+        <RadioButton fx:id="fisicoSessione" focusTraversable="false" layoutX="320.0" layoutY="219.0" mnemonicParsing="false" text="Fisico" toggleGroup="$onlineFisico" />
+        <RadioButton fx:id="masterSessione" focusTraversable="false" layoutX="457.0" layoutY="175.0" mnemonicParsing="false" text="Master">
             <toggleGroup>
                 <ToggleGroup fx:id="masterGiocatore" />
             </toggleGroup>
         </RadioButton>
-        <RadioButton fx:id="giocatoreSessione" layoutX="457.0" layoutY="202.0" mnemonicParsing="false" selected="true" text="Giocatore" toggleGroup="$masterGiocatore" />
-        <RadioButton fx:id="entrambiSesione" layoutX="457.0" layoutY="230.0" mnemonicParsing="false" text="Entrambi" toggleGroup="$masterGiocatore" />
+        <RadioButton fx:id="giocatoreSessione" focusTraversable="false" layoutX="457.0" layoutY="202.0" mnemonicParsing="false" selected="true" text="Giocatore" toggleGroup="$masterGiocatore" />
+        <RadioButton fx:id="entrambiSesione" focusTraversable="false" layoutX="457.0" layoutY="230.0" mnemonicParsing="false" text="Entrambi" toggleGroup="$masterGiocatore" />
         <Label layoutX="135.0" layoutY="14.0" text="Gestione campagne D&amp;D - Inserire un giocatore nella ricerca" />
         <Label fx:id="inserimentoGiocatoreCheck" layoutX="335.0" layoutY="265.0" prefHeight="17.0" prefWidth="191.0" />
     </children>

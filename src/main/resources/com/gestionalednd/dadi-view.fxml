@@ -9,38 +9,38 @@
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane stylesheets="@stylesheets/general.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.DadiController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="514.0" stylesheets="@stylesheets/general.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionalednd.DadiController">
     <children>
         <Label layoutX="180.0" layoutY="14.0" text="Gestionale D&amp;D - Sezione dadi" />
         <Label layoutX="43.0" layoutY="52.0" text="Tipo di dado:" />
-        <RadioButton fx:id="tre" layoutX="131.0" layoutY="52.0" mnemonicParsing="false" text="3">
+        <RadioButton fx:id="tre" focusTraversable="false" layoutX="131.0" layoutY="52.0" mnemonicParsing="false" text="3">
             <toggleGroup>
                 <ToggleGroup fx:id="dice" />
             </toggleGroup>
         </RadioButton>
-        <RadioButton fx:id="quattro" layoutX="184.0" layoutY="52.0" mnemonicParsing="false" text="4" toggleGroup="$dice" />
-        <RadioButton fx:id="sei" layoutX="131.0" layoutY="78.0" mnemonicParsing="false" text="6" toggleGroup="$dice" />
-        <RadioButton fx:id="cento" layoutX="184.0" layoutY="136.0" mnemonicParsing="false" text="100" toggleGroup="$dice" />
-        <RadioButton fx:id="venti" layoutX="131.0" layoutY="136.0" mnemonicParsing="false" selected="true" text="20" toggleGroup="$dice" />
-        <RadioButton fx:id="dodici" layoutX="184.0" layoutY="107.0" mnemonicParsing="false" text="12" toggleGroup="$dice" />
-        <RadioButton fx:id="dieci" layoutX="131.0" layoutY="107.0" mnemonicParsing="false" text="10" toggleGroup="$dice" />
-        <RadioButton fx:id="otto" layoutX="184.0" layoutY="79.0" mnemonicParsing="false" text="8" toggleGroup="$dice" />
+        <RadioButton fx:id="quattro" focusTraversable="false" layoutX="184.0" layoutY="52.0" mnemonicParsing="false" text="4" toggleGroup="$dice" />
+        <RadioButton fx:id="sei" focusTraversable="false" layoutX="131.0" layoutY="78.0" mnemonicParsing="false" text="6" toggleGroup="$dice" />
+        <RadioButton fx:id="cento" focusTraversable="false" layoutX="184.0" layoutY="136.0" mnemonicParsing="false" text="100" toggleGroup="$dice" />
+        <RadioButton fx:id="venti" focusTraversable="false" layoutX="131.0" layoutY="136.0" mnemonicParsing="false" selected="true" text="20" toggleGroup="$dice" />
+        <RadioButton fx:id="dodici" focusTraversable="false" layoutX="184.0" layoutY="107.0" mnemonicParsing="false" text="12" toggleGroup="$dice" />
+        <RadioButton fx:id="dieci" focusTraversable="false" layoutX="131.0" layoutY="107.0" mnemonicParsing="false" text="10" toggleGroup="$dice" />
+        <RadioButton fx:id="otto" focusTraversable="false" layoutX="184.0" layoutY="79.0" mnemonicParsing="false" text="8" toggleGroup="$dice" />
         <Label layoutX="41.0" layoutY="173.0" text="Numero dadi:" />
-        <TextField fx:id="numeroDadi" layoutX="138.0" layoutY="169.0" prefHeight="25.0" prefWidth="41.0" promptText="1" text="1" />
+        <TextField fx:id="numeroDadi" focusTraversable="false" layoutX="138.0" layoutY="169.0" prefHeight="25.0" prefWidth="41.0" promptText="1" text="1" />
         <Label layoutX="262.0" layoutY="483.0" text="Totale:" />
         <Label fx:id="totaleDadi" layoutX="308.0" layoutY="482.0" prefHeight="17.0" prefWidth="73.0" style="-fx-border-color: black;">
             <padding>
                 <Insets left="10.0" />
             </padding></Label>
         <Label layoutX="99.0" layoutY="275.0" text="Singoli lanci" />
-        <ListView fx:id="listaTiri" layoutX="38.0" layoutY="301.0" prefHeight="200.0" prefWidth="200.0" />
-        <Button fx:id="lanciaDadi" layoutX="89.0" layoutY="209.0" mnemonicParsing="false" onAction="#lanciaDadi" text="Lancia" />
+        <ListView fx:id="listaTiri" focusTraversable="false" layoutX="38.0" layoutY="301.0" prefHeight="200.0" prefWidth="200.0" />
+        <Button fx:id="lanciaDadi" focusTraversable="false" layoutX="89.0" layoutY="209.0" mnemonicParsing="false" onAction="#lanciaDadi" text="Lancia" />
         <Label layoutX="287.0" layoutY="52.0" text="Lancia attraverso un'espressione" />
         <Label layoutX="281.0" layoutY="75.0" prefHeight="64.0" prefWidth="200.0" text="Questa particolare funzione ti permette di lanciare dadi attraverso semplici espressioni. Ad esempio:" textAlignment="CENTER" wrapText="true" />
         <Label layoutX="290.0" layoutY="149.0" text="1d20: lancerà un dado a 20 facce" />
         <Label layoutX="290.0" layoutY="177.0" prefHeight="39.0" prefWidth="180.0" text="1d20+5d8: lancerà un dado a 20 facce + 5 dadi a 8 facce" wrapText="true" />
         <Label layoutX="291.0" layoutY="226.0" text="Immettere espressione senza spazi:" />
-        <TextField fx:id="espressioneDadi" layoutX="291.0" layoutY="250.0" prefHeight="25.0" prefWidth="186.0" promptText="1d20" text="1d20" />
-        <Button fx:id="lanciaDadiEspressione" layoutX="347.0" layoutY="289.0" mnemonicParsing="false" onAction="#lanciaEspressioneDadi" text="Lancia" />
+        <TextField fx:id="espressioneDadi" focusTraversable="false" layoutX="291.0" layoutY="250.0" prefHeight="25.0" prefWidth="186.0" promptText="1d20" text="1d20" />
+        <Button fx:id="lanciaDadiEspressione" focusTraversable="false" layoutX="347.0" layoutY="289.0" mnemonicParsing="false" onAction="#lanciaEspressioneDadi" text="Lancia" />
     </children>
 </Pane>
