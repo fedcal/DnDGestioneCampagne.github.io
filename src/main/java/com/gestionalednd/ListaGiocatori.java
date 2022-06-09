@@ -9,7 +9,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
@@ -24,18 +23,6 @@ import java.util.*;
  *
  */
 public class ListaGiocatori implements Initializable {
-
-    /**
-     * fx:id del Button per aggiungere un giocatore alla collezione del Database
-     */
-    @FXML
-    private Button aggiungiGiocatoreBtn;
-
-    /**
-     * fx:id del Button per ricercare un giocatore all'interno della collezione del Database
-     */
-    @FXML
-    private Button ricercaBtn;
 
     /**
      * fx:id ListView per la visualizzazione della lista dei giocatori
@@ -78,7 +65,7 @@ public class ListaGiocatori implements Initializable {
      */
     public void aggiungiGiocatoreView() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("addPlayers-view.fxml"));
-        Parent root = (Parent) fxmlLoader.load();
+        Parent root =  fxmlLoader.load();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.show();
@@ -91,24 +78,24 @@ public class ListaGiocatori implements Initializable {
         String[] queryFilters = {cittaGiocatoriRicarca.getValue().toString(),provinciaGiocatoriRicerca.getValue().toString(),gdrGiocatoriRicerca.getValue().toString(),edizioneGiocatoriRicerca.getValue().toString()};
         LinkedList<PlayersData> listaRicerca=new LinkedList<>();
         if(!queryFilters[0].contains("Seleziona")){
-            for(int i=0;i<playersData.size();i++){
-                if(playersData.get(i).getCitta().contains(queryFilters[0])){
-                    listaRicerca.add(playersData.get(i));
+            for (PlayersData playersDatum : playersData) {
+                if (playersDatum.getCitta().contains(queryFilters[0])) {
+                    listaRicerca.add(playersDatum);
                 }
             }
         }
 
         if(!queryFilters[1].contains("Seleziona")){
             if(listaRicerca.isEmpty()){
-                for(int i=0;i<playersData.size();i++){
-                    if(playersData.get(i).getProvincia().contains(queryFilters[1])){
-                        listaRicerca.add(playersData.get(i));
+                for (PlayersData playersDatum : playersData) {
+                    if (playersDatum.getProvincia().contains(queryFilters[1])) {
+                        listaRicerca.add(playersDatum);
                     }
                 }
             }else{
-                for(int i=0;i<playersData.size();i++){
-                    if(!playersData.get(i).getProvincia().contains(queryFilters[1])){
-                        listaRicerca.remove(playersData.get(i));
+                for (PlayersData playersDatum : playersData) {
+                    if (!playersDatum.getProvincia().contains(queryFilters[1])) {
+                        listaRicerca.remove(playersDatum);
                     }
                 }
             }
@@ -116,15 +103,15 @@ public class ListaGiocatori implements Initializable {
 
         if(!queryFilters[2].contains("Seleziona")){
             if(listaRicerca.isEmpty()){
-                for(int i=0;i<playersData.size();i++){
-                    if(playersData.get(i).getGdrName().contains(queryFilters[2])){
-                        listaRicerca.add(playersData.get(i));
+                for (PlayersData playersDatum : playersData) {
+                    if (playersDatum.getGdrName().contains(queryFilters[2])) {
+                        listaRicerca.add(playersDatum);
                     }
                 }
             }else{
-                for(int i=0;i<playersData.size();i++){
-                    if(!playersData.get(i).getGdrName().contains(queryFilters[2])){
-                        listaRicerca.remove(playersData.get(i));
+                for (PlayersData playersDatum : playersData) {
+                    if (!playersDatum.getGdrName().contains(queryFilters[2])) {
+                        listaRicerca.remove(playersDatum);
                     }
                 }
             }
@@ -132,21 +119,21 @@ public class ListaGiocatori implements Initializable {
 
         if(!queryFilters[3].contains("Seleziona")){
             if(listaRicerca.isEmpty()){
-                for(int i=0;i<playersData.size();i++){
-                    if(playersData.get(i).getEdizione().contains(queryFilters[3])){
-                        listaRicerca.add(playersData.get(i));
+                for (PlayersData playersDatum : playersData) {
+                    if (playersDatum.getEdizione().contains(queryFilters[3])) {
+                        listaRicerca.add(playersDatum);
                     }
                 }
             }else{
-                for(int i=0;i<playersData.size();i++){
-                    if(!playersData.get(i).getEdizione().contains(queryFilters[3])){
-                        listaRicerca.remove(playersData.get(i));
+                for (PlayersData playersDatum : playersData) {
+                    if (!playersDatum.getEdizione().contains(queryFilters[3])) {
+                        listaRicerca.remove(playersDatum);
                     }
                 }
             }
         }
-        for(int i=0; i<listaRicerca.size();i++){
-            vistaGiocatoriRicerca.getItems().add(listaRicerca.get(i).toString());
+        for (PlayersData data : listaRicerca) {
+            vistaGiocatoriRicerca.getItems().add(data.toString());
         }
     }
 
@@ -191,33 +178,29 @@ public class ListaGiocatori implements Initializable {
         TreeSet<String> gdrUtenteLista=new TreeSet<>();
         TreeSet<String> edizioneUtenteLista=new TreeSet<>();
 
-        for(int i=0;i<playersData.size();i++){
-            cittaUtenteLista.add(playersData.get(i).getCitta());
-            provinciaUtenteLista.add(playersData.get(i).getProvincia());
-            gdrUtenteLista.add(playersData.get(i).getGdrName());
-            edizioneUtenteLista.add(playersData.get(i).getEdizione());
+        for (PlayersData playersDatum : playersData) {
+            cittaUtenteLista.add(playersDatum.getCitta());
+            provinciaUtenteLista.add(playersDatum.getProvincia());
+            gdrUtenteLista.add(playersDatum.getGdrName());
+            edizioneUtenteLista.add(playersDatum.getEdizione());
         }
         //riempimento choicebox
         //città
-        Iterator<String> cittaInsieme= cittaUtenteLista.iterator();
-        while (cittaInsieme.hasNext()){
-            cittaGiocatoriRicarca.getItems().add(cittaInsieme.next());
+        for (String s : cittaUtenteLista) {
+            cittaGiocatoriRicarca.getItems().add(s);
         }
         //provincia
-        Iterator<String> provinciaInsieme= provinciaUtenteLista.iterator();
-        while (provinciaInsieme.hasNext()){
-            provinciaGiocatoriRicerca.getItems().add(provinciaInsieme.next());
+        for (String s : provinciaUtenteLista) {
+            provinciaGiocatoriRicerca.getItems().add(s);
         }
         //gdr
-        Iterator<String> gdrInsieme= gdrUtenteLista.iterator();
-        while (gdrInsieme.hasNext()){
-            gdrGiocatoriRicerca.getItems().add(gdrInsieme.next());
+        for (String s : gdrUtenteLista) {
+            gdrGiocatoriRicerca.getItems().add(s);
         }
 
         //edizione
-        Iterator<String> edizioneInsieme= edizioneUtenteLista.iterator();
-        while(edizioneInsieme.hasNext()){
-            edizioneGiocatoriRicerca.getItems().add(edizioneInsieme.next());
+        for (String s : edizioneUtenteLista) {
+            edizioneGiocatoriRicerca.getItems().add(s);
         }
     }
 }

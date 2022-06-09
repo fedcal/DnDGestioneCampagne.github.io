@@ -51,7 +51,7 @@ public class Incantesimo implements Comparable<Incantesimo>{
     /**
      * Lista di classe a cui appartiene l'incantesimo
      */
-    private String classiAppartenenza;
+    private String[] classiAppartenenza;
 
     /**
      * Costruttore di base senza parametri
@@ -70,7 +70,7 @@ public class Incantesimo implements Comparable<Incantesimo>{
      * @param classiAppartenenza Classi di appartenenza
      * @param descrizione Descrizione dell'incantesimo
      */
-    public Incantesimo(String nomeIncantesimo, String livello, String tempoLancio, String componenti, String durata, String gittata, String tipo, String classiAppartenenza, String descrizione) {
+    public Incantesimo(String nomeIncantesimo, String livello, String tempoLancio, String componenti, String durata, String gittata, String tipo, String[] classiAppartenenza, String descrizione) {
         this.nomeIncantesimo = nomeIncantesimo;
         this.livello = livello;
         this.descrizione = descrizione;
@@ -80,6 +80,14 @@ public class Incantesimo implements Comparable<Incantesimo>{
         this.gittata = gittata;
         this.tipo = tipo;
         this.classiAppartenenza = classiAppartenenza;
+    }
+
+    /**
+     * Tipo dell'incantesimo
+     * @return String
+     */
+    public String getTipo() {
+        return tipo;
     }
 
     /**
@@ -182,7 +190,7 @@ public class Incantesimo implements Comparable<Incantesimo>{
      * Metodo per ottenere la classe di appartenenza dell'incantesimo
      * @return String - Classe di appartenenza
      */
-    public String getClassiAppartenenza() {
+    public String[] getClassiAppartenenza() {
         return classiAppartenenza;
     }
 
@@ -190,7 +198,7 @@ public class Incantesimo implements Comparable<Incantesimo>{
      * Metoo per impostare la classe di appartenenza dell'incantesimo
      * @param classiAppartenenza String - Classe di appartenenza
      */
-    public void setClassiAppartenenza(String classiAppartenenza) {
+    public void setClassiAppartenenza(String[] classiAppartenenza) {
         this.classiAppartenenza = classiAppartenenza;
     }
 

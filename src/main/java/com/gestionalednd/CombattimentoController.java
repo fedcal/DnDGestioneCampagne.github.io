@@ -1,7 +1,6 @@
 package com.gestionalednd;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
@@ -12,25 +11,6 @@ import java.util.List;
  * Classe per la gestione del combattimento
  */
 public class CombattimentoController{
-
-    /**
-     * fx:id del pulsante per andare avanti con il turno
-     */
-    @FXML
-    private Button prossimoTurno;
-
-    /**
-     * fx:id del pulsante per inserire il PG/PNG/Mostro nell'elenco dell'iniziativa
-     */
-    @FXML
-    private Button inserisciPersonaggio;
-
-    /**
-     * fx:id del pulsante per modificare la vita del PG/PNG/Mostro nell'elenco dell'iniziativa
-     */
-    @FXML
-    private Button modificaVita;
-
     /**
      * fx:id del TextField per impostare il nome del PG/PNG/Mostro nell'elenco dell'iniziativa
      */
@@ -129,8 +109,8 @@ public class CombattimentoController{
 
         }
         //linkedlist to listview
-        for (int i=0;i<listaTemp.size();i++){
-            listaIniziativa.getItems().add(listaTemp.get(i));
+        for (Object o : listaTemp) {
+            this.listaIniziativa.getItems().add(o);
         }
 
 

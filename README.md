@@ -26,6 +26,12 @@ essere inoltrate sotto qualsiasi forma (si rimanda alla sezione [Come collaborar
 Fatta questa piccola premessa, questa sezione vuole esplicare le funzionalità del progetto, mappandole, indicando la versione in
 cui sono state aggiunte, quelle in corso di sviluppo o in fase di test. Per facilitare la visualizzazione delle varie attività e lo stato in cui si trovano, prem [qui](https://github.com/users/fedcal/projects/6/views/1?layout=board)
 
+**Versione 1.3**
+
+- Homebrew: implementazione varie sezioni, compreso i filtri nella sezione incantesimi. (Bisogna solo aggiungere i dati)
+- Refactoring codice
+- Documentazione codice
+
 **Versione 1.2**
 
 - Preview sezione Homebrew: vengono definite le schermate del materiale homebrew e alcuni dati

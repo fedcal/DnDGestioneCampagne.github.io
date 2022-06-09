@@ -3,7 +3,6 @@ package com.gestionalednd;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
@@ -17,11 +16,7 @@ import org.bson.types.ObjectId;
  */
 public class InserimentoGiocatore {
 
-    /**
-     * fx:id riferito al Button per inserire un utente dopo aver compilato i campi con i dati
-     */
-    @FXML
-    private Button inserireUtente;
+
 
     /**
      * fx:id riferito al TextField per acquisire il nome dell'utente da inserire nel database
@@ -66,12 +61,6 @@ public class InserimentoGiocatore {
     private RadioButton onlineSessione;
 
     /**
-     * fx:id riferito al TextField per acquisire la modalità fisica di gioco dell'utente da inserire nel database
-     */
-    @FXML
-    private RadioButton fisicoSessione;
-
-    /**
      * fx:id riferito al TextField per acquisire la modalità di master dell'utente da inserire nel database
      */
     @FXML
@@ -104,12 +93,12 @@ public class InserimentoGiocatore {
         Document player= new Document("_id",new ObjectId());
 
         player.append("player_id",10000d)
-                .append("nome",nomeUtente.getText().toString())
-                .append("usurnameTelegram",usurnameUtente.getText().toString())
-                .append("citta",cittaUtente.getText().toString())
-                .append("provincia",provinciaUtente.getText().toString())
-                .append("gdrName",gdrUtente.getText().toString())
-                .append("edizione",edizioneUtente.getText().toString());
+                .append("nome",nomeUtente.getText())
+                .append("usurnameTelegram",usurnameUtente.getText())
+                .append("citta", cittaUtente.getText())
+                .append("provincia",provinciaUtente.getText())
+                .append("gdrName",gdrUtente.getText())
+                .append("edizione",edizioneUtente.getText());
         if(onlineSessione.isSelected()){
             player.append("online", "si");
         }else{
@@ -123,7 +112,7 @@ public class InserimentoGiocatore {
         }else if(entrambiSesione.isSelected()){
             player.append("ruolo", "entrambi");
         }
-        if(nomeUtente.getText().toString().contains("Inserisci")||usurnameUtente.getText().toString().contains("Inserisci")||cittaUtente.getText().toString().contains("Inserisci")||provinciaUtente.getText().toString().contains("Inserisci")||gdrUtente.getText().toString().contains("Inserisci")||edizioneUtente.getText().toString().contains("Inserisci")){
+        if(nomeUtente.getText().contains("Inserisci")|| usurnameUtente.getText().contains("Inserisci")|| cittaUtente.getText().contains("Inserisci")|| provinciaUtente.getText().contains("Inserisci")|| gdrUtente.getText().contains("Inserisci")|| edizioneUtente.getText().contains("Inserisci")){
             inserimentoGiocatoreCheck.setTextFill(Color.web("#FF0000"));
             inserimentoGiocatoreCheck.setText("Inserisci tutti i campi");
         }else{

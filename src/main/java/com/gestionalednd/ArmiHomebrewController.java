@@ -30,12 +30,6 @@ public class ArmiHomebrewController implements Initializable {
     private Label descrizioneArma;
 
     /**
-     * fx:id che si riferisce al Button che l'utente preme per ottenere le informazioni relative all'arma
-     */
-    @FXML
-    private Button infoArma;
-
-    /**
      * Inizializzatore degli attributi di classi
      * @param url Url del file xml
      * @param resourceBundle Bundle delle risorse
@@ -44,9 +38,8 @@ public class ArmiHomebrewController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         DizionarioArmi dizionarioArmi=new DizionarioArmi();
         Set<Arma> treeSet=dizionarioArmi.getDizionarioArmi();
-        Iterator<Arma> iterator=treeSet.iterator();
-        while (iterator.hasNext()){
-            listView.getItems().add(iterator.next().toString());
+        for (Arma arma : treeSet) {
+            listView.getItems().add(arma.toString());
         }
 
     }
@@ -59,12 +52,10 @@ public class ArmiHomebrewController implements Initializable {
         topics=listView.getSelectionModel().getSelectedItem().toString();
         DizionarioArmi dizionarioArmi= new DizionarioArmi();
         Set<Arma> setArma=dizionarioArmi.getDizionarioArmi();
-        Iterator<Arma> iterator=setArma.iterator();
-        while (iterator.hasNext()){
-            Arma arma=iterator.next();
-            if (arma.getNomeArma().compareTo(topics)==0){
+        for (Arma arma : setArma) {
+            if (arma.getNomeArma().compareTo(topics) == 0) {
                 System.out.println();
-                descrizioneArma.setText("Nome arma: "+arma.getNomeArma()+"\nTipo arma: "+arma.getTipoArma()+"\nTipo danni: "+arma.getTipoDanni()+"\nProprietà: "+arma.getProprieta()+"\nCosto: "+arma.getCosto()+"\nPeso: "+arma.getPeso()+"Kg"+"\nDanno: "+arma.getDadiDanno());
+                descrizioneArma.setText("Nome arma: " + arma.getNomeArma() + "\nTipo arma: " + arma.getTipoArma() + "\nTipo danni: " + arma.getTipoDanni() + "\nProprietà: " + arma.getProprieta() + "\nCosto: " + arma.getCosto() + "\nPeso: " + arma.getPeso() + "Kg" + "\nDanno: " + arma.getDadiDanno());
             }
         }
     }

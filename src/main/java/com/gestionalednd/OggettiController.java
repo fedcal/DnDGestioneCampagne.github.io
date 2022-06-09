@@ -1,11 +1,9 @@
 package com.gestionalednd;
 
-import com.utilities.dizionari.Armature;
 import com.utilities.dizionari.DizionarioEquipaggiamento;
 import com.utilities.dizionari.Equipaggiamento;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
@@ -28,11 +26,6 @@ public class OggettiController implements Initializable {
      */
     @FXML
     private Label descrizioneOggetto;
-    /**
-     * fx:id del Button che l'utente preme per ottenere le informazioni relative all'oggetto
-     */
-    @FXML
-    private Button infoOggetto;
 
     /**
      * Inizializza i valori della ListView contenente l'elenco degli oggetti selezionabili dall'utente
@@ -43,9 +36,8 @@ public class OggettiController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         DizionarioEquipaggiamento dizionarioEquipaggiamento=new DizionarioEquipaggiamento();
         Set<Equipaggiamento> treeSet=dizionarioEquipaggiamento.getDizionarioEquipaggiamento();
-        Iterator<Equipaggiamento> iterator=treeSet.iterator();
-        while (iterator.hasNext()){
-            listView.getItems().add(iterator.next().getNomeEquipaggiamento());
+        for (Equipaggiamento equipaggiamento : treeSet) {
+            listView.getItems().add(equipaggiamento.getNomeEquipaggiamento());
         }
 
     }
@@ -58,10 +50,8 @@ public class OggettiController implements Initializable {
         topics=listView.getSelectionModel().getSelectedItem().toString();
         DizionarioEquipaggiamento dizionarioEquipaggiamento= new DizionarioEquipaggiamento();
         Set<Equipaggiamento> setEquipaggiamento= dizionarioEquipaggiamento.getDizionarioEquipaggiamento();
-        Iterator<Equipaggiamento> iterator=setEquipaggiamento.iterator();
-        while (iterator.hasNext()){
-            Equipaggiamento equipaggiamento=iterator.next();
-            if (equipaggiamento.getNomeEquipaggiamento().compareTo(topics)==0){
+        for (Equipaggiamento equipaggiamento : setEquipaggiamento) {
+            if (equipaggiamento.getNomeEquipaggiamento().compareTo(topics) == 0) {
                 descrizioneOggetto.setText(equipaggiamento.toString());
             }
         }

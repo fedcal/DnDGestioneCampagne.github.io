@@ -1,12 +1,11 @@
 package com.gestionalednd;
 
-import javafx.event.ActionEvent;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
@@ -23,63 +22,13 @@ public class HomeController {
      * fx:id identificativo del Button relativo al materiale di gioco
      */
     public Button materiale;
-    /**
-     * fx:id identificativo dell'HyperLink per il sito personale https://federicocalo.it
-     */
-    @FXML
-    private Hyperlink sitoSviluppatore;
+
     /**
      *  fx:id identificativo del Label per la visualizzazione degli errori
      */
     @FXML
     private Label errorLabel;
-    /**
-     *  fx:id identificativo del Button per accedere alla funzionalità della lista dei giocatori
-     */
-    @FXML
-    private Button listaGiocatori;
 
-    /**
-     *  fx:id identificativo del Button per accedere alla funzionalità per la creazione delle schede di PG/PNG/Mostri
-     */
-    @FXML
-    private Button creaScheda;
-
-    /**
-     *  fx:id identificativo del Button per accedere alla funzionalità relativa al lancio dei dadi
-     */
-    @FXML
-    private Button dadi;
-
-    /**
-     *  fx:id identificativo del Button per accedere alla funzionalità per la gestione dei combattimenti
-     */
-    @FXML
-    private Button combattimenti;
-
-    /**
-     *  fx:id identificativo dell'Hyperlink relativo alla community i Worlds'Inn
-     */
-    @FXML
-    private Hyperlink worldsInn;
-
-    /**
-     *  fx:id identificativo dell'Hyperlink relativo alla community i Worlds'Inn
-     */
-    @FXML
-    private Hyperlink gruppoChat;
-
-    /**
-     *  fx:id identificativo dell'Hyperlink relativo al modulo delle proposte
-     */
-    @FXML
-    private Hyperlink proposte;
-
-    /**
-     *  fx:id identificativo dell'Hyperlink relativo alla documentazione del programma
-     */
-    @FXML
-    private Hyperlink documentazione;
 
     /**
      * Funzione per aprire la vista dei dadi

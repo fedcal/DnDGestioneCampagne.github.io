@@ -2,7 +2,6 @@ package com.gestionalednd;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-
 import java.util.LinkedList;
 
 /**
@@ -81,12 +80,6 @@ public class DadiController {
      */
     @FXML
     private TextField espressioneDadi;
-
-    /**
-     * fx:id per identificare il Button relativo alla conferma per il lancio dei dadi
-     */
-    @FXML
-    private Button lanciaDadiEspressione;
 
     /**
      * Lista contenente i lanci di un singolo dado

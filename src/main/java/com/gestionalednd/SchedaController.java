@@ -977,6 +977,8 @@ public class SchedaController {
             a.setResizable(false);
             a.setContentText("Compilare tutti i campi e controllare che i campi siano stati compilati correttamente.");
             a.show();
+            File deleteFile= new File(".txt");
+            deleteFile.delete();
         }
 
         /*

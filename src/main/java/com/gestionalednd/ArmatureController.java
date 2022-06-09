@@ -30,12 +30,6 @@ public class ArmatureController implements Initializable {
     private Label descrizioneArma;
 
     /**
-     * fx:id relativo al Button che l'utente preme per ottenere le informazioni dell'armatura
-     */
-    @FXML
-    private Button infoArmatura;
-
-    /**
      * Costruttore di classe
      */
     public void dettagliArmatura( ) {
@@ -43,10 +37,8 @@ public class ArmatureController implements Initializable {
         topics=listView.getSelectionModel().getSelectedItem().toString();
         DizionarioArmature dizionarioArmi= new DizionarioArmature();
         Set<Armature> setArma=dizionarioArmi.getDizionarioArmature();
-        Iterator<Armature> iterator=setArma.iterator();
-        while (iterator.hasNext()){
-            Armature arma=iterator.next();
-            if (arma.getNomeArmatura().compareTo(topics)==0){
+        for (Armature arma : setArma) {
+            if (arma.getNomeArmatura().compareTo(topics) == 0) {
                 System.out.println();
                 descrizioneArma.setText(arma.toString());
             }
@@ -62,9 +54,8 @@ public class ArmatureController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         DizionarioArmature dizionarioArmi=new DizionarioArmature();
         Set<Armature> treeSet=dizionarioArmi.getDizionarioArmature();
-        Iterator<Armature> iterator=treeSet.iterator();
-        while (iterator.hasNext()){
-            listView.getItems().add(iterator.next().getNomeArmatura());
+        for (Armature armature : treeSet) {
+            listView.getItems().add(armature.getNomeArmatura());
         }
 
     }
