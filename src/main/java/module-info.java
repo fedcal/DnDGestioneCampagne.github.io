@@ -22,4 +22,5 @@ module com.gestionalednd {
     exports com.utilities;
     exports com.utilities.scheda;
     exports com.utilities.dizionari;
+    exports com.utilities.dizionari.base;
 }

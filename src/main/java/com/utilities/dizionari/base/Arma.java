@@ -1,8 +1,6 @@
-package com.utilities.dizionari;
+package com.utilities.dizionari.base;
 
 import org.jetbrains.annotations.NotNull;
-
-import java.util.List;
 
 /**
  * Classe per la rappresentazione delle armi

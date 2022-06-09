@@ -2,7 +2,7 @@ package com.gestionalednd;
 
 
 import com.utilities.dizionari.DizionarioIncantesimi;
-import com.utilities.dizionari.Incantesimo;
+import com.utilities.dizionari.base.Incantesimo;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;

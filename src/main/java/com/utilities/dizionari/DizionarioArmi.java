@@ -1,5 +1,7 @@
 package com.utilities.dizionari;
 
+import com.utilities.dizionari.base.Arma;
+
 import java.util.Set;
 import java.util.TreeSet;
 

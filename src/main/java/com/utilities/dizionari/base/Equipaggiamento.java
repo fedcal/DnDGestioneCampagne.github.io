@@ -1,4 +1,4 @@
-package com.utilities.dizionari;
+package com.utilities.dizionari.base;
 
 import org.jetbrains.annotations.NotNull;
 

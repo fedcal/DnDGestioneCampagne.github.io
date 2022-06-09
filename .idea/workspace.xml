@@ -6,6 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="24e7d6d1-3ca5-4b7e-97f8-113143b40ffc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/github-actions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/github-actions.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/Arma.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/Arma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/Armature.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/Armature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/Equipaggiamento.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/Equipaggiamento.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/Incantesimo.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/Incantesimo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/Razza.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/Razza.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/class-use/Arma.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/class-use/Arma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/class-use/Armature.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/class-use/Armature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/class-use/Equipaggiamento.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/class-use/Equipaggiamento.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/class-use/Incantesimo.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/class-use/Incantesimo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/class-use/Razza.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/apidocs/com.gestionalednd/com/utilities/dizionari/class-use/Razza.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionalednd/ArmatureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionalednd/ArmatureController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionalednd/ArmiHomebrewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionalednd/ArmiHomebrewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionalednd/IncantesimiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionalednd/IncantesimiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionalednd/OggettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionalednd/OggettiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/Arma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/base/Arma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/Armature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/base/Armature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/DizionarioArmature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/DizionarioArmature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/DizionarioArmi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/DizionarioArmi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/DizionarioEquipaggiamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/DizionarioEquipaggiamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/DizionarioIncantesimi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/DizionarioIncantesimi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/DizionarioRazze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/DizionarioRazze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/Equipaggiamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/base/Equipaggiamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/Incantesimo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/base/Incantesimo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/Razza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utilities/dizionari/base/Razza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +71,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.file-colors&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.utilities.dizionari.base" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gestionalednd.Launcher" />

@@ -1,15 +1,13 @@
 package com.gestionalednd;
 
-import com.utilities.dizionari.Arma;
+import com.utilities.dizionari.base.Arma;
 import com.utilities.dizionari.DizionarioArmi;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
 import java.net.URL;
-import java.util.Iterator;
 import java.util.ResourceBundle;
 import java.util.Set;
 

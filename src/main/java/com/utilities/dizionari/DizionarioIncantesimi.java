@@ -1,6 +1,7 @@
 package com.utilities.dizionari;
 
-import java.util.Set;
+import com.utilities.dizionari.base.Incantesimo;
+
 import java.util.TreeSet;
 
 /**

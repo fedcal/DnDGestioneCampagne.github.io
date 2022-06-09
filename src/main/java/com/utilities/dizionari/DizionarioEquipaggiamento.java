@@ -1,5 +1,7 @@
 package com.utilities.dizionari;
 
+import com.utilities.dizionari.base.Equipaggiamento;
+
 import java.util.TreeSet;
 
 /**
