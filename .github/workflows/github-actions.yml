@@ -17,7 +17,7 @@ jobs:
       - name: Build with Maven
         run: mvn clean install
       - name: build a docker image
-        use: mr-smithers-excellent/docker-build-push@v5
+        uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: federicocalo98/gestionalednd
           tags: v1.3
